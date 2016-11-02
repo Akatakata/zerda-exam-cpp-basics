@@ -2,7 +2,7 @@
 
 using namespace std;
 
-/** 
+/**
  * Create a function that prints a multiplication table with a given base number
  * It should take the base number as a parameter, and print the output to the cout
  *
@@ -19,9 +19,14 @@ using namespace std;
  *   10 * 5 = 50
  */
 
-
-int main() {
-
-  return 0;
+void multiply_table(int base) {
+  for (int i = 1; i <= 10; i++) {
+    cout << i << " * " << base << " = " << i * base << endl;
+  }
 }
 
+int main() {
+  int number = 5;
+  multiply_table(number);
+  return 0;
+}
